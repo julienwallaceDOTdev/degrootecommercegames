@@ -4,7 +4,7 @@ import { resolve } from "node:path";
 
 const root = resolve(import.meta.dirname, "..");
 const read = (path) => readFileSync(resolve(root, path), "utf8");
-const pages = ["connections.html", "word-game.html", "crossword.html"];
+const pages = ["index.html", "connections.html", "word-game.html", "crossword.html"];
 
 // Every public page links to every game and loads its declared local assets.
 for (const page of pages) {
@@ -17,7 +17,7 @@ for (const page of pages) {
   for (const destination of pages) {
     assert.match(html, new RegExp(`href="${destination}"`), `${page} links to ${destination}`);
   }
-  for (const asset of [...html.matchAll(/(?:href|src)="((?:(?:css|js)\/|dcslogo1\.png)[^"]*)"/g)].map((match) => match[1])) {
+  for (const asset of [...html.matchAll(/(?:href|src)="((?:(?:css|js|assets)\/)[^"]+)"/g)].map((match) => match[1])) {
     assert.doesNotThrow(() => read(asset), `${page} asset exists: ${asset}`);
   }
 }

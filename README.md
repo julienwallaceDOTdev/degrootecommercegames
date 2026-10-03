@@ -16,7 +16,7 @@ The pages can be opened directly from the filesystem, but a local web server mos
 python3 -m http.server 8000
 ```
 
-Then visit <http://localhost:8000/connections.html>. Use the shared header to open the other games. Any simple static server works.
+Then visit <http://localhost:8000/>. The top-level `index.html` provides links to all three games. Any simple static server works.
 
 Run the dependency-free content and navigation checks with:
 
@@ -40,7 +40,7 @@ To create the next newsletter edition:
 4. Complete each puzzle once, intentionally try an incorrect choice, and test each Copy results button.
 5. Commit the changed puzzle scripts to the newsletter edition branch or repository.
 
-The DeGroote Commerce Society logo is stored in `dcslogo1.png` and used by every page header. Shared club colours and layout are in `css/styles.css`; shared shuffle, feedback, and clipboard helpers are in `js/shared.js`.
+The DeGroote Commerce Society logo is stored in `assets/images/dcs-logo.png` and used by every page header. Shared club colours and layout are in `css/styles.css`; shared shuffle, feedback, and clipboard helpers are in `js/shared.js`.
 
 ## Cloudflare Workers static assets
 
@@ -49,6 +49,7 @@ Point a Cloudflare Worker static-assets configuration at the repository root (or
 After deployment, public URLs will follow this pattern, using the hostname assigned to the Worker:
 
 ```text
+https://your-worker.your-subdomain.workers.dev/
 https://your-worker.your-subdomain.workers.dev/connections.html
 https://your-worker.your-subdomain.workers.dev/word-game.html
 https://your-worker.your-subdomain.workers.dev/crossword.html
@@ -59,10 +60,12 @@ A custom domain uses the same page paths. Link those full URLs from the email ne
 ## Files
 
 ```text
+index.html             Root landing page and game menu
 connections.html       Category-matching page
 word-game.html         Five-letter guessing page
 crossword.html         Mini-crossword page
 css/styles.css         Shared responsive visual system
+assets/images/         DCS logo and future image assets
 js/shared.js           Shared shuffle, clipboard, and message utilities
 js/connections.js      Category puzzle content and game logic
 js/word-game.js        Five-letter answer/list and game logic
