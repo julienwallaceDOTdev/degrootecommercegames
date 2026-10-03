@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Five by Five, a business-themed five-letter guessing game from the DeGroote Commerce Society.">
+  <title>Five by Five | DeGroote Commerce Society</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/shared.js" defer></script>
+  <script src="js/word-game.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#game">Skip to game</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="connections.html" aria-label="DeGroote Commerce Society Games home">
+        <img class="brand-logo" src="dcslogo1.png" alt="" width="147" height="50">
+        <span class="brand-copy"><strong>DeGroote Commerce Society</strong><small>Club Games</small></span>
+      </a>
+      <nav aria-label="Game navigation">
+        <a href="connections.html">Bundles</a>
+        <a href="word-game.html" aria-current="page">Five by Five</a>
+        <a href="crossword.html">The Brief</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell" id="game">
+    <section class="game-heading">
+      <p class="eyebrow">Daily-style word challenge</p>
+      <h1>Five by Five</h1>
+      <p>Find the five-letter business term in six attempts.</p>
+    </section>
+
+    <section class="game-card word-game" aria-labelledby="word-game-title">
+      <div class="game-toolbar">
+        <h2 id="word-game-title" class="sr-only">Five by Five game</h2>
+        <p id="attempt-counter" class="status-label">Attempt 1 of 6</p>
+        <button id="copy-results" class="button button-quiet" type="button" disabled>Copy results</button>
+      </div>
+      <div id="guess-grid" class="guess-grid" aria-label="Six-row guessing grid"></div>
+      <p id="game-message" class="game-message" role="status" aria-live="polite">Enter a five-letter word.</p>
+      <div id="keyboard" class="keyboard" aria-label="On-screen keyboard"></div>
+    </section>
+
+    <section class="instructions" aria-labelledby="how-to-play">
+      <h2 id="how-to-play">How to play</h2>
+      <p>Type a five-letter word and press Enter. Tiles marked “right place” are correct, “wrong place” belong elsewhere, and “not in word” are absent. The keyboard works on screen or from your device.</p>
+    </section>
+  </main>
+
+  <footer><p>A DeGroote Commerce Society game. No scores or personal data are collected.</p></footer>
+</body>
+</html>

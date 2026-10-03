@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Morning Brief, a business-school mini crossword from the DeGroote Commerce Society.">
+  <title>The Morning Brief | DeGroote Commerce Society</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/shared.js" defer></script>
+  <script src="js/crossword.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#game">Skip to game</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="connections.html" aria-label="DeGroote Commerce Society Games home">
+        <img class="brand-logo" src="dcslogo1.png" alt="" width="147" height="50">
+        <span class="brand-copy"><strong>DeGroote Commerce Society</strong><small>Club Games</small></span>
+      </a>
+      <nav aria-label="Game navigation">
+        <a href="connections.html">Bundles</a>
+        <a href="word-game.html">Five by Five</a>
+        <a href="crossword.html" aria-current="page">The Brief</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell" id="game">
+    <section class="game-heading">
+      <p class="eyebrow">Mini crossword</p>
+      <h1>The Morning Brief</h1>
+      <p>Six intersecting terms from the language of business.</p>
+    </section>
+
+    <section class="game-card crossword-game" aria-labelledby="crossword-title">
+      <h2 id="crossword-title" class="sr-only">The Morning Brief crossword</h2>
+      <div id="active-clue" class="active-clue" aria-live="polite">Select a square to begin.</div>
+      <div class="crossword-layout">
+        <div>
+          <div id="crossword-grid" class="crossword-grid" role="grid" aria-label="Seven by seven crossword"></div>
+          <p id="game-message" class="game-message" role="status" aria-live="polite">Select a square and start typing.</p>
+          <div class="button-row">
+            <button id="check" class="button button-primary" type="button">Check</button>
+            <button id="reveal" class="button button-secondary" type="button">Reveal puzzle</button>
+            <button id="copy-results" class="button button-quiet" type="button" disabled>Copy results</button>
+          </div>
+        </div>
+        <div class="clue-panel">
+          <section aria-labelledby="across-heading">
+            <h3 id="across-heading">Across</h3>
+            <ol id="across-clues" class="clue-list"></ol>
+          </section>
+          <section aria-labelledby="down-heading">
+            <h3 id="down-heading">Down</h3>
+            <ol id="down-clues" class="clue-list"></ol>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="instructions" aria-labelledby="how-to-play">
+      <h2 id="how-to-play">How to play</h2>
+      <p>Select a square and type. Select an intersection again to switch direction; use arrow keys to move. Check flags incorrect letters without revealing answers. Reveal fills the entire puzzle.</p>
+    </section>
+  </main>
+
+  <footer><p>A DeGroote Commerce Society game. No scores or personal data are collected.</p></footer>
+</body>
+</html>

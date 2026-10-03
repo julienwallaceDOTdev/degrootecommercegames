@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Boardroom Bundles, a business-themed category matching game from the DeGroote Commerce Society.">
+  <title>Boardroom Bundles | DeGroote Commerce Society</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/shared.js" defer></script>
+  <script src="js/connections.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#game">Skip to game</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="connections.html" aria-label="DeGroote Commerce Society Games home">
+        <img class="brand-logo" src="dcslogo1.png" alt="" width="147" height="50">
+        <span class="brand-copy"><strong>DeGroote Commerce Society</strong><small>Club Games</small></span>
+      </a>
+      <nav aria-label="Game navigation">
+        <a href="connections.html" aria-current="page">Bundles</a>
+        <a href="word-game.html">Five by Five</a>
+        <a href="crossword.html">The Brief</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell" id="game">
+    <section class="game-heading">
+      <p class="eyebrow">Category challenge</p>
+      <h1>Boardroom Bundles</h1>
+      <p>Find four groups of four connected business-school terms.</p>
+    </section>
+
+    <section class="game-card connections-game" aria-labelledby="connections-title">
+      <div class="game-toolbar">
+        <div>
+          <h2 id="connections-title" class="sr-only">Boardroom Bundles game</h2>
+          <p class="status-label">Mistakes remaining</p>
+          <div id="mistakes" class="mistake-dots" aria-label="Four mistakes remaining"></div>
+        </div>
+        <button id="copy-results" class="button button-quiet" type="button" disabled>Copy results</button>
+      </div>
+
+      <div id="solved-groups" class="solved-groups" aria-label="Solved categories"></div>
+      <div id="word-grid" class="word-grid" aria-label="Select four related words"></div>
+      <p id="game-message" class="game-message" role="status" aria-live="polite">Select four words that share a connection.</p>
+
+      <div class="button-row">
+        <button id="shuffle" class="button button-secondary" type="button">Shuffle</button>
+        <button id="submit" class="button button-primary" type="button" disabled>Submit selection</button>
+      </div>
+    </section>
+
+    <section class="instructions" aria-labelledby="how-to-play">
+      <h2 id="how-to-play">How to play</h2>
+      <p>Select four terms, then submit your choice. Each group has one precise business-school connection. You have four mistakes before the remaining answers are revealed.</p>
+    </section>
+  </main>
+
+  <footer><p>A DeGroote Commerce Society game. No scores or personal data are collected.</p></footer>
+</body>
+</html>
