@@ -2,7 +2,8 @@
   "use strict";
 
   // EDITION CONTENT: Change ANSWER and add any permitted guesses to ACCEPTED_WORDS.
-  const ANSWER = "PITCH";
+  const EDITION = "November 2026";
+  const ANSWER = "SHARE";
   const ACCEPTED_WORDS = new Set([
     "ADMIT", "AGENT", "AGILE", "ALIGN", "ALLOW", "APPLY", "AUDIT", "AWARE",
     "BOARD", "BONUS", "BRAIN", "BRAND", "BRIEF", "BUILD", "BUYER", "CAUSE",
@@ -169,7 +170,7 @@
     const rows = guesses.map(({ evaluation }) => evaluation.map((state) =>
       state === "correct" ? "🟩" : state === "present" ? "🟨" : "⬛").join(""));
     const score = guesses.at(-1)?.word === ANSWER ? `${guesses.length}/${MAX_ATTEMPTS}` : `X/${MAX_ATTEMPTS}`;
-    ClubGames.copyText(`Five by Five — Sample 01 ${score}\n${rows.join("\n")}\nDeGroote Commerce Society`, copyButton);
+    ClubGames.copyText(`Five by Five — ${EDITION} ${score}\n${rows.join("\n")}\nDeGroote Commerce Society`, copyButton);
   });
 
   buildGrid();

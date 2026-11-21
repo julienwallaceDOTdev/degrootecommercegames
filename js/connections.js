@@ -3,12 +3,12 @@
 
   // EDITION CONTENT: Replace these four groups for the next newsletter.
   const PUZZLE = {
-    edition: "Sample 01",
+    edition: "November 2026",
     groups: [
-      { title: "Financial statement terms", words: ["Asset", "Equity", "Revenue", "Margin"] },
-      { title: "Classic marketing funnel", words: ["Awareness", "Interest", "Desire", "Action"] },
-      { title: "Leadership qualities", words: ["Vision", "Empathy", "Courage", "Integrity"] },
-      { title: "Student club roles", words: ["President", "Treasurer", "Secretary", "Events"] }
+      { title: "Pitch deck sections", words: ["Problem", "Solution", "Traction", "Ask"] },
+      { title: "Economic indicators", words: ["GDP", "CPI", "Unemployment", "Productivity"] },
+      { title: "Negotiation moves", words: ["Anchor", "Concede", "Counter", "Close"] },
+      { title: "People at a club event", words: ["Host", "Speaker", "Sponsor", "Volunteer"] }
     ]
   };
 

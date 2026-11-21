@@ -4,15 +4,15 @@
   // EDITION CONTENT: Each answer is placed from its starting row/column.
   // Rows and columns are zero-based; answers must agree wherever they cross.
   const PUZZLE = {
-    edition: "Sample 01",
+    edition: "November 2026",
     size: 7,
     entries: [
-      { answer: "MARKET", row: 0, col: 0, direction: "across", clue: "Where buyers and sellers meet" },
-      { answer: "SCALE", row: 2, col: 1, direction: "across", clue: "Grow a venture efficiently" },
-      { answer: "MODEL", row: 5, col: 2, direction: "across", clue: "Framework for how a company creates value" },
-      { answer: "MARGIN", row: 0, col: 0, direction: "down", clue: "Difference between revenue and cost" },
-      { answer: "ASSET", row: 0, col: 1, direction: "down", clue: "Resource with economic value" },
-      { answer: "LEADS", row: 2, col: 4, direction: "down", clue: "Potential customers for a sales team" }
+      { answer: "PROFIT", row: 0, col: 0, direction: "across", clue: "What remains after expenses are subtracted" },
+      { answer: "TRADE", row: 2, col: 1, direction: "across", clue: "Exchange goods, services, or securities" },
+      { answer: "PRICE", row: 5, col: 2, direction: "across", clue: "Amount a customer pays" },
+      { answer: "PIVOTS", row: 0, col: 0, direction: "down", clue: "Strategic changes in direction" },
+      { answer: "RATIO", row: 0, col: 1, direction: "down", clue: "Comparison used in financial analysis" },
+      { answer: "DEBIT", row: 2, col: 4, direction: "down", clue: "Entry recorded on the left side of an account" }
     ]
   };
 
